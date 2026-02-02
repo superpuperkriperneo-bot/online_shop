@@ -1,0 +1,21 @@
+.venv/
+.venv_lin/
+
+# Python waqtınsha faylları
+__pycache__/
+*.pyc
+
+# Maǵlıwmatlar bazası
+db.sqlite3
+
+# Sır maǵlıwmatlar
+.env
+
+# IDE sazlawları (VS Code, PyCharm)
+.idea/
+.vscode/
+.pytest_cache/
+
+# Media
+media/*
+staticfiles/
