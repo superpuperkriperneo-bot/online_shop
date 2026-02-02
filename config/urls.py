@@ -27,7 +27,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/token/', TokenObtainPairView.as_view(), name='token-optain-pair'),
     path('api/token/resfresh/', TokenRefreshView.as_view(), name='token-refresh'),
-    path('api/', include('user.urls')),
+    path('', include('user.urls')),
     path('api/schema/', SpectacularAPIView.as_view(), name = 'schema'),
     path('api/schema/swagger-ui/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
     path('api/schema/redoc/', SpectacularRedocView.as_view(url_name='schema'), name='redoc')
